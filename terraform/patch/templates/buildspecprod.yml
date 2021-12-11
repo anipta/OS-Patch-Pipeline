@@ -1,0 +1,16 @@
+version: 0.2
+phases:
+  install:
+    commands:
+      - echo "Installing awscli"
+      - apt update
+      - apt install jq
+      - pip install --upgrade awscli
+      - pip install boto3
+      - apt-get update && apt-get -y install jq python3-pip python3-dev && pip3 install --upgrade awscli
+  build:
+    commands:
+      - aws ssm send-command --document-name 'AWS-RunPatchBaseline' --targets Key='tag:application-environment',Values='prod' --parameters 'Operation=Install' --timeout-seconds 600
+  post_build:
+    commands:
+      - echo "Build Complete"
