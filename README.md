@@ -27,7 +27,7 @@ SSM Commands to patch targeted instances
 Clone following repo: https://github.com/anipta/OS-Patch-Pipeline
 Ensure you have EC2 Intances running with Tag Key:Value pair (application-environment: dev or prod)
 
-![](DevOps AoD Artifact  OS PatchPipeline- Anish Patel.mp4)
+https://github.com/anipta/OS-Patch-Pipeline/blob/main/DevOps%20AoD%20Artifact%20OS%20PatchPipeline-%20Anish%20Patel.mp4
 
 
 # References
