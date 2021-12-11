@@ -24,7 +24,21 @@ SSM Commands to patch targeted instances
 ![alt text](./Architecture.png)
 
 ## Demo
+Clone following repo: https://github.com/anipta/OS-Patch-Pipeline
+Ensure you have EC2 Intances running with Tag Key:Value pair (application-environment: dev or prod)
 
+![](DevOps AoD Artifact  OS PatchPipeline- Anish Patel.mp4)
+
+
+# References
+
+https://aws.amazon.com/blogs/mt/scheduling-centralized-multi-account-multi-region-patching-aws-systems-manager-automation/
+
+https://aws.amazon.com/blogs/mt/software-patching-with-aws-systems-manager/
+
+https://github.com/aws-samples/resource-auto-tagger/tree/main/source
+
+https://github.com/aws-samples/aws-systems-manager-schedule-central-patch-example
 
 
 
